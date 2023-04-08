@@ -1,0 +1,236 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* For mobile */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins' , sans-serif;
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    background-position: top center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; 
+}
+
+.huddle-logo {
+    width: 150px;
+    height: 35px;
+    margin: 2.5rem 0rem 2rem 9.5rem;
+}
+
+.pic {
+    width: 296px;
+    height: 206px;
+    margin-top: 1.1rem;
+}
+
+.txt-content {
+    padding: 0.1rem;
+    margin-top: 1rem;
+}
+
+ h1 {
+    width: 280px;
+    height: 72px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;  
+    margin-bottom: 1rem;
+}
+
+p {
+    width: 304px;
+    height: 120px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.btn-reg {
+    width: 200px;
+    height: 40px;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+    border-radius: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #684BB1;
+    margin-top: -1.5rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.fb-icon,
+.twit-icon, 
+.insta-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.798301px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.fb-icon>svg {
+    width: 0.61rem;
+    height: 1.33rem;
+    fill:#FFFFFF;
+}
+
+.twit-icon>svg {
+    width: 1rem;
+    height: 1.1rem;
+    fill:#FFFFFF;
+}
+
+.insta-icon>svg {
+    width: 1.1rem;
+    height: 1rem;
+    fill:#FFFFFF;
+}
+
+
+/* For desktop */
+
+@media screen and (min-width: 980px) {
+
+    body {
+        background-image: url(./images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: inherit;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        margin: 4rem;
+    }
+
+    .huddle-logo {
+        width: 20rem;
+        height: 3.2rem;
+        margin: 5rem 2rem 2rem 6rem;
+    }
+
+    .pic {
+        width: 50.5rem;
+        height: 35.5rem;
+        margin-left: -15rem;
+        margin-bottom: 6.2rem;
+    }
+
+    .txt-content {
+        margin-bottom: 22rem;
+    }
+
+    h1 {
+        width: 487px;
+        height: 120px;
+        font-size: 40px;
+        line-height: 60px;
+        text-align: left;
+    }
+
+    p {
+        width: 520px;
+        height: 81px;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: left;
+    }
+
+    .btn-reg {
+        width: 200px;
+        height: 56px;
+        box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+        border-radius: 28px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-size: 18px;
+        line-height: 27px;
+        margin-left: -35.5rem;
+        margin-top: 1rem;
+    }
+
+    .btn-reg:hover {
+        cursor: pointer;
+        background: #E880E8;
+        color: #FFFFFF;
+    }
+
+    .social-media {
+        margin-left: 8em;
+        margin-top: 40rem;
+    }
+
+    .fb-icon>svg {
+        width: 0.61rem;
+        height: 1.33rem;
+    }
+
+    .twit-icon>svg {
+        width: 1.3rem;
+        height: 1.5rem;
+    }
+
+    .insta-icon>svg {
+        width: 1.2rem;
+        height: 1.1rem;
+    }
+
+    .fb-icon, 
+    .twit-icon, 
+    .insta-icon {
+        width: 2.75rem;
+        height: 2.8rem;
+}
+
+
+    .fb-icon:hover, 
+    .twit-icon:hover, 
+    .insta-icon:hover {
+        cursor: pointer;
+        border: 1.17647px solid #FF52C1;
+    }
+
+    .fb-icon:hover svg,
+    .twit-icon:hover svg,
+    .insta-icon:hover svg {
+        cursor: pointer;
+        fill: #FF52C1;
+    } 
+
+}
